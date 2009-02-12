@@ -21,6 +21,7 @@ To compile mixology.c for 1.8.6
 * Run the 1.8.6 test file (mixology_test18.rb) with the 1.8.6 interpreter
 
 Other Mixology19 features:
+
 * Error checking (raises an exception if it is not given a valid module parameter)
 
 ## Acknowledgments:
