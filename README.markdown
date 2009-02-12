@@ -9,12 +9,12 @@ it does come with a bunch of macros that make using it a touch easier than 1.8.6
 The mixology.c file in this repo is modified to work with Ruby 1.9.1, it also works out of the box with Ruby 1.8.6.
 
 To compile mixology.c for 1.9.1:
--  Run extconf.rb with the *Ruby 1.9.1 interpreter*
+-  Run extconf.rb with the Ruby 1.9.1 interpreter
 -  Type 'make'
 -  Run the 1.9.1 test file (mixology_test19.rb) with the 1.9.1 interpreter
 
 To compile mixology.c for 1.8.6:
--  Run extconf.rb with the *Ruby 1.8.6 interpreter*
+-  Run extconf.rb with the Ruby 1.8.6 interpreter
 -  Type 'make'
 -  Run the 1.8.6 test file (mixology_test18.rb) with the 1.8.6 interpreter
 
