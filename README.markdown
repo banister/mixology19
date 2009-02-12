@@ -10,12 +10,16 @@ The mixology.c file in this repo is modified to work with Ruby 1.9.1, it also wo
 
 To compile mixology.c for 1.9.1:
 Run extconf.rb with the Ruby 1.9.1 interpreter
+
 Type 'make'
+
 Run the 1.9.1 test file (mixology_test19.rb) with the 1.9.1 interpreter
 
 To compile mixology.c for 1.8.6:
 Run extconf.rb with the Ruby 1.8.6 interpreter
+
 Type 'make'
+
 Run the 1.8.6 test file (mixology_test18.rb) with the 1.8.6 interpreter
 
 Other Mixology19 features:
