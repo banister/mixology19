@@ -1,7 +1,5 @@
 #include "ruby.h"
 
-/* common macros */
-
 /* cannot use ordinary CLASS_OF as it does not return an lvalue */
 #define KLASS_OF(c) (RBASIC(c)->klass)
 
@@ -43,7 +41,7 @@ static VALUE rb_unmix(VALUE self, VALUE module) {
     VALUE klass;
 
     /* check that module is valid */
-    if (!TYPE(module) == T_MODULE)
+    if (TYPE(module) != T_MODULE)
         rb_raise(rb_eArgError, "error: parameter must be a module");
 
     for (klass = KLASS_OF(self); klass != rb_class_real(klass); klass = RCLASS_SUPER(klass)) {
@@ -101,7 +99,7 @@ static VALUE rb_mixin(VALUE self, VALUE module) {
     int index;
 
     /* check that module is valid */
-    if (!TYPE(module) == T_MODULE)
+    if (TYPE(module) != T_MODULE)
         rb_raise(rb_eArgError, "error: parameter must be a module");
 
     rb_unmix(self, module);
