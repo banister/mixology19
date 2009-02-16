@@ -2,6 +2,11 @@ require 'rubygems'
 require 'test/unit'
 require 'mixology'
 
+# in 1.9.1 the test/unit library seems to mix in PP:ObjectMixin automatically so i added
+# that module into the list of modules to test for when checking the inheritance chains
+# i also didn't have dust installed (and have no idea what it is) but created a self.test method
+# that i think may perform at least some of the function; anyway this test suite passes 100% on my setup
+
 class MixologyTest < Test::Unit::TestCase
 
     def self.test(name, &block)
