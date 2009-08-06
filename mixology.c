@@ -1,3 +1,5 @@
+/* 1.9 compatibility added by John Mair, http://banisterfiend.wordpress.com */
+
 #include "ruby.h"
 
 /* cannot use ordinary CLASS_OF as it does not return an lvalue */
